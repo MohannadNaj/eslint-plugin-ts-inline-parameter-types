@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ts-inline-parameter-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint plugin to enforce inline TypeScript types in function parameters",
   "type": "module",
   "main": "lib/index.js",
