@@ -5,7 +5,9 @@ ESLint plugin that flags single-use type definitions in function parameters.
 ## Installation
 
 ```bash
-bun add -d eslint-plugin-ts-inline-parameter-types
+npm install -d eslint-plugin-ts-inline-parameter-types
+
+#     bun add -d eslint-plugin-ts-inline-parameter-types
 ```
 
 ```javascript

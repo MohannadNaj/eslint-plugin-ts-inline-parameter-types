@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ts-inline-parameter-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint plugin to enforce inline TypeScript types in function parameters",
   "type": "module",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
     "format:check": "oxfmt --check lib tests *.js",
     "lint": "oxlint lib tests *.js",
     "lint:ci": "oxlint --deny-warnings lib tests *.js",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "lint-staged": {
     "*.js": "oxfmt"
@@ -36,7 +36,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mohannadnaj/eslint-plugin-ts-inline-parameter-types.git"
+    "url": "https://github.com/MohannadNaj/eslint-plugin-ts-inline-parameter-types.git"
   },
   "peerDependencies": {
     "@typescript-eslint/parser": "^8.0.0",
