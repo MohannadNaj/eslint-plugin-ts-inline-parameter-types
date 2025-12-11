@@ -1,0 +1,57 @@
+{
+  "name": "eslint-plugin-ts-inline-parameter-types",
+  "version": "1.0.0",
+  "description": "ESLint plugin to enforce inline TypeScript types in function parameters",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "vitest run --pool=forks",
+    "test:watch": "vitest --pool=forks",
+    "format": "oxfmt lib tests *.js",
+    "format:check": "oxfmt --check lib tests *.js",
+    "lint": "oxlint lib tests *.js",
+    "lint:ci": "oxlint --deny-warnings lib tests *.js",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.js": "oxfmt"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "typescript",
+    "inline-types",
+    "code-style",
+    "type-parameters",
+    "function-parameters"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohannadnaj/eslint-plugin-ts-inline-parameter-types.git"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/utils": "^8.0.0",
+    "eslint": "^8.0.0 || ^9.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/rule-tester": "^8.0.0",
+    "@typescript-eslint/utils": "^8.0.0",
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "oxfmt": "^0.13.0",
+    "oxlint": "^1.28.0",
+    "vitest": "^2.0.0"
+  }
+}
